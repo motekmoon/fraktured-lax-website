@@ -28,9 +28,7 @@ fraktured-lax-website/
 │   ├── hero-image.png       # Main hero image
 │   └── hero-image-bw.png    # Black & white version
 ├── Documentation/
-│   ├── README.md            # This file
-│   ├── deployment.md        # Deployment instructions (gitignored)
-│   └── dns-settings.md      # DNS configuration (gitignored)
+│   └── README.md            # This file
 └── package.json
 ```
 
@@ -61,14 +59,13 @@ npm start
 
 This project is deployed on Vercel with automatic deployments on push to `main`.
 
-See `deployment.md` for detailed deployment instructions (gitignored for security).
+## Local Configuration Files
 
-## DNS Configuration
+The following configuration files are gitignored and must be created locally by developers with access:
 
-See `dns-settings.md` for DNS configuration details (gitignored for security).
+| File | Purpose |
+|------|---------|
+| `Documentation/deployment.md` | Vercel project details, team IDs, dashboard URLs |
+| `Documentation/dns-settings.md` | DNS records and domain configuration |
 
-## Security Notes
-
-The following files contain sensitive configuration and are gitignored:
-- `Documentation/deployment.md` - Vercel project details, team IDs, dashboard URLs
-- `Documentation/dns-settings.md` - DNS records and domain configuration
+Contact the project maintainer for access to these configuration details.
